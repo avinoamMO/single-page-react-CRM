@@ -5,10 +5,6 @@ import { BarChart, CartesianGrid , XAxis, YAxis, Tooltip, Legend, Bar, Responsiv
 
 export default class TopEmployees extends Component{
     render(){
-
-        console.log(this.props.topemployees)
-
-        const data = [{ name: 'my milkshake', mine: 70 }, {name: 'yours', yours: 50}];
          
         if(this.props.topemployees===null)
         {

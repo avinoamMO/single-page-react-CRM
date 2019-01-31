@@ -6,16 +6,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 export default class SalesSinceLineChart extends Component{
     render(){
 
-        // [
-        //     {
-        //         "_id": {
-        //             "year": 2018,
-        //             "month": 12,
-        //             "day": 19,
-        //             "count": 1
-        //         }
-        //     },
-
         const data = [];
             if(this.props.salessince30days!=null){
                 this.props.salessince30days.map(c=>{
@@ -28,8 +18,8 @@ export default class SalesSinceLineChart extends Component{
                     count: c.count
                 }
                 data.push(newDay)
+                return null // Added this to eliminate compile warning.
             })
-            console.log(data)
         }
         if(this.props.salessince30days!=null)
         {
