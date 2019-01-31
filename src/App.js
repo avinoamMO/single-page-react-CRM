@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
-import './App.css';
-import './clients.css';
-import NavBar from './components/navbar.js'
-import Clients from './components/clients.js'
-import Actions from './components/actions.js'
-import Analytics from './components/analytics.js'
+import '../src/css/App.css';
+import '../src/css/clients.css';
+import NavBar from './components/NavBar.js'
+import Clients from './components/clients/Clients.js'
+import Actions from './components/actions/Actions.js'
+import Analytics from './components/analytics/Analytics.js'
 import axios from 'axios';
         
 class App extends Component {
@@ -18,6 +18,9 @@ class App extends Component {
   }
 
   render() {
+
+
+    
 
     return (
       <Router>

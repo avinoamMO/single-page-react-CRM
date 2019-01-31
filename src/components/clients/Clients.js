@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Client from './client'
+// import Client from './clients/Client'
+import Client from './Client'
 import UpdateClient from './UpdateClient'
 
 class Clients extends Component{
@@ -7,6 +8,7 @@ class Clients extends Component{
         super()
         this.state = {uid: null}
     }
+
 
     finishUpdate(){
         this.setState({uid : null});

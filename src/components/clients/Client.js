@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 
 export default class Client extends Component{
 
+    
 
     handleClick = () =>{
         this.props.updateUID(this.props.data._id)
-        
-        // This code is assuming the name property is unique.
     }
     render(){
         return(

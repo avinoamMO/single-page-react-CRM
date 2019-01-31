@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import HottestCountry from './hottestcountry';
-import EmailsSent from './EmailsSent';
-import OutstandingClients from './OutstandingClients';
-import NewMonthClients from './NewMonthClients';
-import SalesByCountryBarChart from './SalesByCountryBarChart';
-import TopEmployees from './TopEmployees'
-import SalesSinceLineChart from './SalesSinceLineChart'
-import ClientAcquisition from './ClientAcquisition'
-import '../analytics.css';
+import HottestCountry from './badges/HottestCountry';
+import EmailsSent from './badges/EmailsSent';
+import OutstandingClients from './badges/OutstandingClients';
+import NewMonthClients from './badges/NewMonthClients';
+import SalesByCountryBarChart from './charts/SalesByCountryBarChart';
+import TopEmployees from './charts/TopEmployees'
+import SalesSinceLineChart from './charts/SalesSinceLineChart'
+import ClientAcquisition from './charts/ClientAcquisition'
+import '../../css/analytics.css';
 
 
 
