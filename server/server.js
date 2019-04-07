@@ -3,7 +3,6 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const path = require('path');
-const PORT = 3007
 
 // db setup:
 mongoose.connect('mongodb://localhost/iCRM')
@@ -18,13 +17,12 @@ app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With')
-  
     next()
   })
 
 app.use("/", api)
   
-app.listen(PORT, function () {
+app.listen(process.env.PORT || 8080, function () {
     console.log(`server up @ :`+ PORT)
 });
 

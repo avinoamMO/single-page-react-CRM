@@ -9,12 +9,10 @@ class Clients extends Component{
         this.state = {uid: null}
     }
 
-
     finishUpdate(){
         this.setState({uid : null});
     }
     updateUser(e){
-        
         console.log(e)
     }
     updateUID(e){
